@@ -1,0 +1,36 @@
+{
+  "_note": "بيانات البراند - لبنان",
+  "brand": {
+    "name": "al BOURJI ELECTRICS",
+    "name_ar": "البُرجي الكتريك",
+    "name_display": "al BOURJI",
+    "tagline": "كهربائيات فاخرة لكل بيت لبناني",
+    "slogan": "الجودة أولاً. التوصيل لكل لبنان.",
+    "established": 2010
+  },
+  "contact": {
+    "phone": "+96171122050",
+    "phone_display": "71 122 050",
+    "phone2": "+9613434063",
+    "phone2_display": "03 434 063",
+    "whatsapp": "96171122050",
+    "whatsapp2": "9613434063",
+    "email": "info@albourji-electrics.com",
+    "instagram": "https://instagram.com/albourji.electrics",
+    "instagram_handle": "@albourji.electrics",
+    "facebook": "https://facebook.com/albourji.electrics",
+    "tiktok": "https://tiktok.com/@albourji.electrics",
+    "address": "الضاحية الجنوبية، بيروت",
+    "city": "بيروت",
+    "country": "لبنان",
+    "country_code": "LB",
+    "shipping_area": "جميع المناطق اللبنانية",
+    "working_hours": "السبت - الخميس: 9 ص - 10 م",
+    "working_hours_friday": "الجمعة: 4 م - 10 م",
+    "currency": "ل.ل"
+  },
+  "social": {
+    "whatsapp_url": "https://wa.me/96171122050?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1",
+    "whatsapp2_url": "https://wa.me/9613434063?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%A5%D8%B5%D9%84%D8%A7%D8%AD"
+  }
+}
