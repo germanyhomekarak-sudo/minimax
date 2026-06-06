@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#1a1a1a"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <ellipse cx="200" cy="375" rx="120" ry="10" fill="#000" opacity=".4"/>
+  <rect x="140" y="60" width="120" height="300" rx="60" fill="#cfcfcf"/>
+  <rect x="155" y="75" width="90" height="270" rx="45" fill="none" stroke="#888" stroke-width="1"/>
+  <circle cx="200" cy="170" r="30" fill="#D4AF37" opacity=".4"/>
+  <circle cx="200" cy="170" r="20" fill="#D4AF37" opacity=".6"/>
+  <circle cx="200" cy="170" r="10" fill="#D4AF37"/>
+  <rect x="170" y="290" width="60" height="40" rx="6" fill="#1a1a1a"/>
+  <circle cx="185" cy="310" r="3" fill="#D4AF37"/>
+  <circle cx="200" cy="310" r="3" fill="#D4AF37"/>
+  <circle cx="215" cy="310" r="3" fill="#D4AF37"/>
+  <text x="200" y="385" text-anchor="middle" font-family="Cairo" font-size="14" fill="#D4AF37" font-weight="700">سخان</text>
+</svg>

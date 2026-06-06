@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>al BOURJI ELECTRICS | كهربائيات فاخرة في لبنان</title>
+  <meta name="description" content="al BOURJI ELECTRICS - وجهتك الأولى في لبنان للأجهزة الكهربائية الفاخرة. غسالات، برادات، تكييف، أفران بضمان أصلي وتوصيل لكل المناطق اللبنانية." />
+  <meta name="keywords" content="al BOURJI, البُرجي, كهربائيات لبنان, غسالات بيروت, برادات, تكييف, صيانة كهربائيات" />
+  <meta name="theme-color" content="#0E0E0E" />
+  <meta property="og:title" content="al BOURJI ELECTRICS" />
+  <meta property="og:description" content="كهربائيات فاخرة بضمان أصلي وتوصيل لكل لبنان" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ar_LB" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "al BOURJI ELECTRICS",
+    "description": "متجر إلكتروني للأجهزة الكهربائية الفاخرة في لبنان",
+    "telephone": "+96171122050",
+    "address": { "@type": "PostalAddress", "addressLocality": "بيروت", "addressCountry": "LB" },
+    "areaServed": "LB"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- إعلان علوي متحرك -->
+  <div class="announcement" id="announcementBar" hidden>
+    <div class="announcement__track">
+      <span>🚚 توصيل مجاني لكل المناطق اللبنانية للطلبات فوق $500</span>
+      <span>📞 اتصل الآن: <strong data-c="phone_display">71 122 050</strong></span>
+      <span>🛡 ضمان أصلي على كل المنتجات</span>
+      <span>⚡ تركيب احترافي مجاني</span>
+      <span>🚚 توصيل مجاني لكل المناطق اللبنانية للطلبات فوق $500</span>
+      <span>📞 اتصل الآن: <strong data-c="phone_display">71 122 050</strong></span>
+    </div>
+    <button class="announcement__close" id="announcementClose" aria-label="إغلاق">×</button>
+  </div>
+
+  <!-- الشريط العلوي -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__info">
+        <span><svg class="ic"><use href="assets/icons.svg#i-clock"/></svg> <span data-c="working_hours">السبت - الخميس: 9 ص - 10 م</span></span>
+        <span class="topbar__sep">|</span>
+        <span><svg class="ic"><use href="assets/icons.svg#i-pin"/></svg> <span data-c="shipping_area">جميع المناطق اللبنانية</span></span>
+      </div>
+      <div class="topbar__social">
+        <a data-social="instagram" aria-label="إنستقرام"><svg class="ic"><use href="assets/icons.svg#i-ig"/></svg></a>
+        <a data-social="facebook" aria-label="فيسبوك"><svg class="ic"><use href="assets/icons.svg#i-fb"/></svg></a>
+        <a data-social="tiktok" aria-label="تيك توك"><svg class="ic"><use href="assets/icons.svg#i-tt"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- الهيدر -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#home" aria-label="al BOURJI ELECTRICS">
+        <img src="assets/logo.svg" alt="al BOURJI ELECTRICS" width="200" height="60" />
+      </a>
+
+      <nav class="nav" id="nav" aria-label="القائمة الرئيسية">
+        <a href="#home">الرئيسية</a>
+        <a href="#products">المنتجات</a>
+        <a href="#services">الخدمات</a>
+        <a href="#repair">صيانة</a>
+        <a href="#about">من نحن</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__phone" href="tel:+96171122050" title="اتصل بنا">
+          <svg class="ic"><use href="assets/icons.svg#i-phone"/></svg>
+          <span data-c="phone_display">71 122 050</span>
+        </a>
+        <a class="btn btn--wa btn--sm" data-social="whatsapp_url" target="_blank" rel="noopener">
+          <svg class="ic"><use href="assets/icons.svg#i-wa"/></svg> واتساب
+        </a>
+        <button class="menu-btn" id="menuBtn" aria-label="القائمة">
+          <svg class="ic"><use href="assets/icons.svg#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- الهيرو -->
+  <section class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="eyebrow">
+          <svg class="ic"><use href="assets/icons.svg#i-bolt"/></svg>
+          <span data-c="slogan">الجودة أولاً. التوصيل لكل لبنان.</span>
+        </span>
+        <h1 class="hero__title">
+          <span data-c="tagline">كهربائيات فاخرة لكل بيت لبناني</span>
+        </h1>
+        <p class="hero__sub">
+          غسالات، برادات، تكييف، أفران ومكانس من أفضل الماركات العالمية — بضمان أصلي، توصيل آمن لكل المناطق اللبنانية، وتركيب احترافي بأسعار مدروسة.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--wa btn--lg" data-social="whatsapp_url" target="_blank" rel="noopener">
+            <svg class="ic"><use href="assets/icons.svg#i-wa"/></svg> اطلب الآن عبر واتساب
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#products">
+            تصفّح المنتجات <svg class="ic"><use href="assets/icons.svg#i-arrow"/></svg>
+          </a>
+        </div>
+        <div class="hero__features">
+          <div><svg class="ic"><use href="assets/icons.svg#i-truck"/></svg><span>توصيل لكل لبنان</span></div>
+          <div><svg class="ic"><use href="assets/icons.svg#i-shield"/></svg><span>ضمان أصلي</span></div>
+          <div><svg class="ic"><use href="assets/icons.svg#i-wrench"/></svg><span>تركيب مجاني</span></div>
+          <div><svg class="ic"><use href="assets/icons.svg#i-cash"/></svg><span>دفع عند الاستلام</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- التصنيفات -->
+  <section class="categories">
+    <div class="container">
+      <div class="section__head">
+        <h2>تصفّح حسب الفئة</h2>
+        <a href="#products" class="link-arrow">عرض كل المنتجات <svg class="ic"><use href="assets/icons.svg#i-arrow"/></svg></a>
+      </div>
+      <div class="cat-grid" id="catGrid"></div>
+    </div>
+  </section>
+
+  <!-- المنتجات -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section__head">
+        <h2>أحدث المنتجات</h2>
+        <p>تشكيلة مختارة من أفضل الأجهزة الكهربائية</p>
+      </div>
+
+      <!-- شريط البحث والفلتر -->
+      <div class="filter-bar">
+        <div class="search">
+          <svg class="ic"><use href="assets/icons.svg#i-search"/></svg>
+          <input type="search" id="searchInput" placeholder="ابحث عن منتج..." />
+        </div>
+        <div class="filter-chips" id="filterChips">
+          <button class="chip active" data-filter="all">الكل</button>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+      <p class="no-results" id="noResults" hidden>لا توجد منتجات مطابقة</p>
+    </div>
+  </section>
+
+  <!-- الخدمات -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section__head">
+        <h2>خدماتنا في لبنان</h2>
+        <p>تجربة شراء متكاملة من الاختيار إلى التركيب</p>
+      </div>
+      <div class="service-grid">
+        <article class="service">
+          <div class="service__icon"><svg class="ic"><use href="assets/icons.svg#i-truck"/></svg></div>
+          <h3>توصيل لكل لبنان</h3>
+          <p>من بيروت إلى أقصى الشمال والجنوب — توصيل آمن ومضمون لكل المناطق اللبنانية.</p>
+        </article>
+        <article class="service">
+          <div class="service__icon"><svg class="ic"><use href="assets/icons.svg#i-shield"/></svg></div>
+          <h3>ضمان أصلي</h3>
+          <p>كل منتج يأتي بفاتورة معتمدة وضمان من الوكيل يمتد من 2 إلى 7 سنوات.</p>
+        </article>
+        <article class="service">
+          <div class="service__icon"><svg class="ic"><use href="assets/icons.svg#i-wrench"/></svg></div>
+          <h3>تركيب احترافي</h3>
+          <p>فنيون متخصصون يركّبون الجهاز في موقعك خلال 24 ساعة من التوصيل.</p>
+        </article>
+        <article class="service">
+          <div class="service__icon"><svg class="ic"><use href="assets/icons.svg#i-headset"/></svg></div>
+          <h3>دعم فني 24/7</h3>
+          <p>فريق دعم متواصل عبر واتساب للإجابة على استفساراتك في أي وقت.</p>
+        </article>
+        <article class="service">
+          <div class="service__icon"><svg class="ic"><use href="assets/icons.svg#i-cash"/></svg></div>
+          <h3>دفع مرن</h3>
+          <p>الدفع نقداً عند الاستلام، أو عبر OMT / Whish Money / تحويل بنكي.</p>
+        </article>
+        <article class="service">
+          <div class="service__icon"><svg class="ic"><use href="assets/icons.svg#i-swap"/></svg></div>
+          <h3>استبدال 7 أيام</h3>
+          <p>سياسة استبدال مرنة خلال 7 أيام من الاستلام في حال وجود عطل.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- صيانة / إصلاح -->
+  <section class="repair" id="repair">
+    <div class="container repair__inner">
+      <div class="repair__text">
+        <span class="eyebrow"><svg class="ic"><use href="assets/icons.svg#i-wrench"/></svg> خدمة الإصلاح</span>
+        <h2>جهازك عندك عطل؟ <br/>فنيّنا يصلحونه بخبرة</h2>
+        <p>فريق فني متخصص لإصلاح جميع أنواع الأجهزة الكهربائية — غسالات، برادات، تكييف، أفران، مكانس. فحص مجاني داخل بيروت وضواحيها، وقطع غيار أصلية مضمونة.</p>
+        <ul class="repair__list">
+          <li><svg class="ic"><use href="assets/icons.svg#i-check"/></svg> فحص مجاني داخل بيروت وضواحيها</li>
+          <li><svg class="ic"><use href="assets/icons.svg#i-check"/></svg> قطع غيار أصلية مضمونة</li>
+          <li><svg class="ic"><use href="assets/icons.svg#i-check"/></svg> خدمة منزلية في نفس اليوم</li>
+          <li><svg class="ic"><use href="assets/icons.svg#i-check"/></svg> ضمان على الإصلاح لمدة 6 أشهر</li>
+        </ul>
+        <div class="repair__cta">
+          <a class="btn btn--wa btn--lg" data-social="whatsapp2_url" target="_blank" rel="noopener">
+            <svg class="ic"><use href="assets/icons.svg#i-wa"/></svg> تواصل مع الفني
+          </a>
+          <a class="btn btn--ghost btn--lg" href="tel:+9613434063">
+            <svg class="ic"><use href="assets/icons.svg#i-phone"/></svg> اتصل بالفني
+          </a>
+        </div>
+      </div>
+      <div class="repair__visual">
+        <div class="repair__card">
+          <div class="repair__card-icon"><svg class="ic"><use href="assets/icons.svg#i-wrench"/></svg></div>
+          <h3>الفني المتخصص</h3>
+          <span id="mechanicName">الفني المختص</span>
+          <a class="repair__phone" href="tel:+9613434063">
+            <svg class="ic"><use href="assets/icons.svg#i-phone"/></svg>
+            <span data-c="phone2_display">03 434 063</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- شهادات العملاء -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section__head">
+        <h2>ماذا يقول عملاؤنا في لبنان</h2>
+        <p>آراء حقيقية من عملاء سعداء</p>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p>"اشتريت غسالة من al BOURJI والتوصيل كان في نفس اليوم للضاحية. التركيب احترافي والجهاز ممتاز. تجربة لا تنسى!"</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">أ</div>
+            <div><strong>أحمد خليل</strong><span>بيروت</span></div>
+          </div>
+        </article>
+        <article class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p>"الأسعار منافسة جداً والجودة مضمونة. تواصلت عبر واتساب وتم تأكيد طلبي خلال دقائق. أنصح بهم بشدة."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">س</div>
+            <div><strong>سارة المنصور</strong><span>طرابلس</span></div>
+          </div>
+        </article>
+        <article class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p>"خدمة الإصلاح ممتازة. الفني وصل في نفس اليوم وأصلح التكييف بسرعة. سعر معقول وضمان. شكراً al BOURJI!"</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">م</div>
+            <div><strong>محمد عيتاني</strong><span>صيدا</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- الماركات -->
+  <section class="brands">
+    <div class="container">
+      <div class="section__head">
+        <h2>نعمل مع أفضل الماركات</h2>
+      </div>
+      <div class="brand-grid">
+        <div class="brand-card">PREMIUM</div>
+        <div class="brand-card">MASTER</div>
+        <div class="brand-card">ELITE</div>
+        <div class="brand-card">PRO</div>
+        <div class="brand-card">LUX</div>
+        <div class="brand-card">STAR</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- من نحن -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__visual">
+        <div class="about__badge">
+          <span class="about__year" data-c="established">2010</span>
+          <span class="about__since">منذ</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <span class="eyebrow"><svg class="ic"><use href="assets/icons.svg#i-bolt"/></svg> من نحن</span>
+        <h2>قصة <span class="brand-name">al BOURJI</span></h2>
+        <p>بدأنا بحلم بسيط: أن نوفّر للأسر اللبنانية أجهزة كهربائية فاخرة بأسعار عادلة، وخدمة عملاء تليق بهم. اليوم، وبعد أكثر من 14 عامًا، نفخر بأننا نخدم آلاف العملاء في كل أرجاء لبنان.</p>
+        <p>نختار منتجاتنا من أبرز المصنعين العالميين، ونخضع كل جهاز لاختبارات جودة صارمة قبل أن يصل إلى عميلنا. نؤمن أن الرفاهية الحقيقية تبدأ من تفاصيل صغيرة تدوم.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- تواصل -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section__head">
+        <h2>تواصل معنا</h2>
+        <p>نسعد بخدمتك في أي وقت — من أي مكان في لبنان</p>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__cards">
+          <a class="contact__card contact__card--wa" data-social="whatsapp_url" target="_blank" rel="noopener">
+            <div class="contact__icon"><svg class="ic"><use href="assets/icons.svg#i-wa"/></svg></div>
+            <div>
+              <span>واتساب المبيعات</span>
+              <strong data-c="phone_display">71 122 050</strong>
+              <small>اطلب منتجاتك</small>
+            </div>
+          </a>
+          <a class="contact__card contact__card--wa" data-social="whatsapp2_url" target="_blank" rel="noopener">
+            <div class="contact__icon"><svg class="ic"><use href="assets/icons.svg#i-wrench"/></svg></div>
+            <div>
+              <span>واتساب الصيانة</span>
+              <strong data-c="phone2_display">03 434 063</strong>
+              <small>إصلاح الأجهزة</small>
+            </div>
+          </a>
+          <a class="contact__card" data-social="instagram" target="_blank" rel="noopener">
+            <div class="contact__icon contact__icon--ig"><svg class="ic"><use href="assets/icons.svg#i-ig"/></svg></div>
+            <div>
+              <span>إنستقرام</span>
+              <strong data-c="instagram_handle">@albourji.electrics</strong>
+              <small>تابعنا لآخر العروض</small>
+            </div>
+          </a>
+          <div class="contact__card contact__card--static">
+            <div class="contact__icon"><svg class="ic"><use href="assets/icons.svg#i-pin"/></svg></div>
+            <div>
+              <span>التوصيل</span>
+              <strong data-c="shipping_area">كل المناطق اللبنانية</strong>
+              <small data-c="working_hours">السبت - الخميس 9ص - 10م</small>
+            </div>
+          </div>
+        </div>
+
+        <form class="form" id="orderForm" novalidate>
+          <h3>اطلب الآن</h3>
+          <p class="form__hint">املأ النموذج وسنتواصل معك خلال دقائق عبر واتساب</p>
+
+          <div class="form__row">
+            <label>
+              <span>الاسم الكامل</span>
+              <input type="text" name="name" required placeholder="اكتب اسمك" />
+            </label>
+            <label>
+              <span>رقم الجوال</span>
+              <input type="tel" name="phone" required placeholder="71xxxxxx أو 03xxxxxx" pattern="^(03|70|71|76|78|79|81)[0-9]{6}$" />
+            </label>
+          </div>
+          <div class="form__row">
+            <label>
+              <span>المنطقة</span>
+              <select name="area" required>
+                <option value="">اختر منطقتك</option>
+                <option>بيروت</option>
+                <option>الضاحية الجنوبية</option>
+                <option>الضاحية الشمالية (المتن)</option>
+                <option>بعبدا</option>
+                <option>عاليه</option>
+                <option>الشوف</option>
+                <option>طرابلس</option>
+                <option>صيدا</option>
+                <option>صور</option>
+                <option>النبطية</option>
+                <option>بعلبك</option>
+                <option>زحلة</option>
+                <option>جبيل</option>
+                <option>كسروان</option>
+                <option>أخرى</option>
+              </select>
+            </label>
+            <label>
+              <span>المنتج المطلوب</span>
+              <select name="product" id="productSelect" required>
+                <option value="">اختر منتجًا</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            <span>ملاحظات (اختياري)</span>
+            <textarea name="notes" rows="3" placeholder="مثال: التركيب خلال يومين، أو استفسار عن اللون"></textarea>
+          </label>
+          <button type="submit" class="btn btn--gold btn--lg btn--block">
+            إرسال الطلب <svg class="ic"><use href="assets/icons.svg#i-arrow"/></svg>
+          </button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <img src="assets/logo.svg" alt="al BOURJI ELECTRICS" class="footer__logo" />
+        <p>كهربائيات فاخرة بضمان أصلي وخدمة لا تُنسى. من لبنان إلى كل بيت.</p>
+        <div class="footer__social">
+          <a data-social="whatsapp_url" aria-label="واتساب" target="_blank" rel="noopener"><svg class="ic"><use href="assets/icons.svg#i-wa"/></svg></a>
+          <a data-social="instagram" aria-label="إنستقرام" target="_blank" rel="noopener"><svg class="ic"><use href="assets/icons.svg#i-ig"/></svg></a>
+          <a data-social="facebook" aria-label="فيسبوك" target="_blank" rel="noopener"><svg class="ic"><use href="assets/icons.svg#i-fb"/></svg></a>
+          <a data-social="tiktok" aria-label="تيك توك" target="_blank" rel="noopener"><svg class="ic"><use href="assets/icons.svg#i-tt"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>روابط سريعة</h4>
+        <a href="#home">الرئيسية</a>
+        <a href="#products">المنتجات</a>
+        <a href="#services">الخدمات</a>
+        <a href="#repair">الصيانة والإصلاح</a>
+        <a href="#about">من نحن</a>
+        <a href="#contact">تواصل</a>
+      </div>
+      <div class="footer__col">
+        <h4>خدماتنا</h4>
+        <a href="#services">توصيل لكل لبنان</a>
+        <a href="#services">تركيب احترافي</a>
+        <a href="#services">الدفع عند الاستلام</a>
+        <a href="#repair">إصلاح الأجهزة</a>
+      </div>
+      <div class="footer__col">
+        <h4>تواصل</h4>
+        <p><svg class="ic"><use href="assets/icons.svg#i-phone"/></svg> <span data-c="phone_display">71 122 050</span> (مبيعات)</p>
+        <p><svg class="ic"><use href="assets/icons.svg#i-wrench"/></svg> <span data-c="phone2_display">03 434 063</span> (صيانة)</p>
+        <p><svg class="ic"><use href="assets/icons.svg#i-mail"/></svg> <span data-c="email">info@albourji-electrics.com</span></p>
+        <p><svg class="ic"><use href="assets/icons.svg#i-pin"/></svg> <span data-c="shipping_area">كل المناطق اللبنانية</span></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© <span id="year">2026</span> al BOURJI ELECTRICS. جميع الحقوق محفوظة.</p>
+        <p>صُنع بحب ❤️ في لبنان 🇱🇧</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر واتساب العائم -->
+  <a class="fab fab--wa" data-social="whatsapp_url" target="_blank" rel="noopener" aria-label="واتساب">
+    <svg class="ic"><use href="assets/icons.svg#i-wa"/></svg>
+  </a>
+
+  <!-- زر المطور -->
+  <button class="dev-fab" id="devFab" aria-label="وضع المطور" title="وضع المطور">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+    </svg>
+  </button>
+
+  <!-- نافذة تفاصيل المنتج -->
+  <div class="product-modal" id="productModal" hidden>
+    <div class="product-modal__backdrop" data-pm-close></div>
+    <div class="product-modal__panel" id="productModalPanel"></div>
+  </div>
+
+  <!-- نافذة وضع المطور -->
+  <div class="dev-modal" id="devModal" hidden>
+    <div class="dev-modal__backdrop" data-dev-close></div>
+    <div class="dev-modal__panel">
+      <div class="dev-modal__head">
+        <div>
+          <h3>لوحة المطور</h3>
+          <span>al BOURJI ELECTRICS</span>
+        </div>
+        <button class="dev-modal__close" data-dev-close aria-label="إغلاق">×</button>
+      </div>
+
+      <div class="dev-login" id="devLogin">
+        <div class="dev-login__icon">🔐</div>
+        <h4>أدخل كود المطور</h4>
+        <p>هذا الإعداد للمطوّر فقط</p>
+        <input type="password" id="devCode" placeholder="••••••••" autocomplete="off" />
+        <button class="btn btn--gold btn--block" id="devSubmit">دخول</button>
+        <p class="dev-login__err" id="devErr"></p>
+      </div>
+
+      <div class="dev-panel" id="devPanel" hidden>
+        <div class="dev-tabs">
+          <button class="dev-tab active" data-tab="products">المنتجات</button>
+          <button class="dev-tab" data-tab="branding">العلامة</button>
+          <button class="dev-tab" data-tab="content">المحتوى</button>
+          <button class="dev-tab" data-tab="theme">الستايل</button>
+          <button class="dev-tab" data-tab="export">تصدير</button>
+        </div>
+
+        <div class="dev-body">
+          <section class="dev-section" data-pane="products">
+            <div class="dev-row dev-row--between">
+              <h4>إدارة المنتجات</h4>
+              <button class="btn btn--gold btn--sm" id="addProduct">+ إضافة منتج</button>
+            </div>
+            <div class="dev-product-list" id="devProductList"></div>
+          </section>
+
+          <section class="dev-section" data-pane="branding" hidden>
+            <h4>بيانات التواصل والعلامة</h4>
+            <div class="dev-form">
+              <label><span>اسم البراند</span><input data-branding="brand.name" /></label>
+              <label><span>الشعار (slogan)</span><input data-branding="brand.slogan" /></label>
+              <label><span>العنوان (tagline)</span><input data-branding="brand.tagline" /></label>
+              <label><span>واتساب 1 (مع كود الدولة)</span><input data-branding="contact.whatsapp" placeholder="96171122050" /></label>
+              <label><span>واتساب 2 (الصيانة)</span><input data-branding="contact.whatsapp2" placeholder="9613434063" /></label>
+              <label><span>جوال 1 (display)</span><input data-branding="contact.phone_display" /></label>
+              <label><span>جوال 2 (display)</span><input data-branding="contact.phone2_display" /></label>
+              <label><span>البريد الإلكتروني</span><input data-branding="contact.email" /></label>
+              <label><span>إنستقرام (URL)</span><input data-branding="contact.instagram" /></label>
+              <label><span>فيسبوك (URL)</span><input data-branding="contact.facebook" /></label>
+              <label><span>تيك توك (URL)</span><input data-branding="contact.tiktok" /></label>
+              <label><span>منطقة التوصيل</span><input data-branding="contact.shipping_area" /></label>
+              <label><span>المدينة</span><input data-branding="contact.city" /></label>
+              <label><span>ساعات العمل</span><input data-branding="contact.working_hours" /></label>
+              <label><span>اسم الفني</span><input data-branding="mechanic.name" placeholder="الفني المتخصص" /></label>
+            </div>
+          </section>
+
+          <section class="dev-section" data-pane="content" hidden>
+            <h4>المحتوى والنصوص</h4>
+            <div class="dev-form">
+              <label><span>إعلان علوي (شريط متحرك)</span><input data-content="topbar.announcement" placeholder="مثال: خصم 20% على كل الأجهزة" /></label>
+              <label><span>العنوان الرئيسي (Hero)</span><textarea data-content="hero.title" rows="2"></textarea></label>
+              <label><span>الوصف الفرعي (Hero)</span><textarea data-content="hero.subtitle" rows="3"></textarea></label>
+              <label><span>قسم "من نحن" - الفقرة 1</span><textarea data-content="about.p1" rows="4"></textarea></label>
+              <label><span>قسم "من نحن" - الفقرة 2</span><textarea data-content="about.p2" rows="4"></textarea></label>
+            </div>
+          </section>
+
+          <section class="dev-section" data-pane="theme" hidden>
+            <h4>ألوان الموقع</h4>
+            <div class="dev-theme">
+              <label><span>اللون الذهبي</span><input type="color" data-theme="--gold" /></label>
+              <label><span>اللون الذهبي الفاتح</span><input type="color" data-theme="--gold-2" /></label>
+              <label><span>الخلفية الداكنة</span><input type="color" data-theme="--bg" /></label>
+              <label><span>لون النصوص</span><input type="color" data-theme="--text" /></label>
+              <label><span>لون الواتساب</span><input type="color" data-theme="--wa" /></label>
+              <button class="btn btn--ghost btn--sm" id="resetTheme">إعادة الافتراضي</button>
+            </div>
+          </section>
+
+          <section class="dev-section" data-pane="export" hidden>
+            <h4>تصدير التعديلات</h4>
+            <p>اضغط زر "حفظ وتنزيل" للحصول على ملف <code>products.json</code> و <code>contact.json</code> المحدّثين. ارفعهم على الاستضافة لاستبدال النسخة الحالية.</p>
+            <div class="dev-export">
+              <button class="btn btn--gold" id="exportJson">💾 حفظ وتنزيل الملفات</button>
+              <button class="btn btn--wa" id="exportAndShare">📤 حفظ + إرسال عبر واتساب</button>
+            </div>
+            <div class="dev-export__preview" id="exportPreview"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/dev.js"></script>
+</body>
+</html>
